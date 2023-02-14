@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    height: 100vh;
+    background-image: url(/images/pngtree-teacher-s-college-classroom-coaching-course-poster-background-image_188494.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+}
+
+.content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.teacher,.student{
+    height: 200px;
+    width: 200px;
+    transition: .5s;
+    position: relative;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.toggle{
+    margin-top: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.toggle img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.teacher:hover {
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.student:hover {
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.content h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+
+

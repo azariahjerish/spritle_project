@@ -39,3 +39,7 @@ console.log(seven(times(five())));
 console.log(eight(minus(three())));
 console.log(eight(minus(three())));
 console.log(six(divided_by(two())));
+
+var str = "nine(times(five()))";
+
+console.log(eval(str));
