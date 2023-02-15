@@ -1,10 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.background{
+/* index */
+
+.background {
     height: 100vh;
     background-image: url(/images/pngtree-teacher-s-college-classroom-coaching-course-poster-background-image_188494.jpg);
     background-size: cover;
@@ -12,7 +14,7 @@
     filter: blur(3px);
 }
 
-.content{
+.content {
     position: absolute;
     display: flex;
     align-items: center;
@@ -20,22 +22,25 @@
     flex-direction: column;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.teacher,.student{
+
+.teacher,
+.student {
     height: 200px;
     width: 200px;
     transition: .5s;
     position: relative;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
-.toggle{
+
+.toggle {
     margin-top: 100px;
     display: flex;
     gap: 100px;
 }
 
-.toggle img{
+.toggle img {
     width: 200px;
     height: 200px;
     cursor: pointer;
@@ -45,16 +50,113 @@
     transform: scale(1.2);
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
 .student:hover {
     transform: scale(1.2);
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.content h1{
+.content #h1 {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     font-size: 70px;
 }
 
+/* main */
 
+.body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.body div {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div1 {
+    display: flex;
+    background-color: black;
+    display: inline-block;
+    color: azure;
+    text-align: center;
+}
+
+.div2 {
+    background-color: azure;
+    display: inline-block;
+}
+
+#input1 {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.div2 span {
+    height: 30vh;
+    width: 30vw;
+    border: 1px solid black;
+    /* background-color: black; */
+}
+
+#output {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    /* color: white; */
+}
+
+#button,
+#clear {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#table {
+    width: 30vw;
+    height: 20vh;
+    border: 1px solid white;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#table table,
+tr,
+th {
+    /* border: 1px solid white; */
+    padding: 20px;
+    border-collapse: collapse;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60vh;
+    width: 70vh;
+    border: 1px solid black;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
 

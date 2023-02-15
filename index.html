@@ -12,22 +12,46 @@
         </style>
     </head>
 
-    <body>
+    <body id="body">
         <section class="background">
 
         </section>
         <section class="content">
-            <h1>login as</h1>
+            <h1 id="h1">login as</h1>
             <div class="toggle">
                 <div class="teacher">
-                    <a href=""><img src="/images/teacher.png" alt=""></a>
+                    <img src="/images/teacher.png" alt="" id="teacher-log">
                 </div>
                 <div class="student">
-                    <a href=""><img src="/images/idea.png" alt=""></a>
+                    <img src="/images/idea.png" alt="" id="student-log">
                 </div>
             </div>
         </section>
-        <script src="script.js"></script>
+        <section class="login" id="log">
+            <div class="logo">
+
+            </div>
+            <h1>Sign in</h1>
+            <br>
+            <div>
+                <input type="email" id="email" placeholder="name@example.com">
+            </div>
+            <div class="form-floating">
+                <input type="password" id="pass" placeholder="password">
+            </div>
+            <br>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <br>
+            <div>
+                <button  type="submit" id="validation">Sign in</button>
+                <button  type="submit" id="close">Close</button>
+            </div>
+        </section>
+        <script src="script2.js"></script>
     </body>
 
 </html>
