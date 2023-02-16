@@ -24,3 +24,8 @@ document.getElementById("validation").addEventListener("click", () => {
     document.getElementById("email").value = "";
     document.getElementById("pass").value="";
 })
+
+document.getElementById("clr").addEventListener("click", () => {
+    document.getElementById("email").value = "";
+    document.getElementById("pass").value = "";
+})
